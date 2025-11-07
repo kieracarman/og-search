@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "OG Search",
+  "version": "1.0.0",
+  "description": "Search before the bots. Filters results to pre-ChatGPT internet when everything was made by actual humans.",
+  "author": "Kiera Carman",
+  "homepage_url": "https://ogsearch.app",
+  "permissions": ["webRequest", "webRequestBlocking", "storage", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    },
+    "default_title": "OG Search - Before the bots"
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="logo">
+          <span class="icon">🔥</span>
+          <h1>OG Search</h1>
+        </div>
+        <p class="tagline">before the bots took over</p>
+      </div>
+
+      <!-- Toggle Card -->
+      <div class="toggle-card">
+        <div class="toggle-row">
+          <div>
+            <div class="toggle-label">Time Machine</div>
+            <div id="status" class="status">active</div>
+          </div>
+          <label class="toggle">
+            <input type="checkbox" id="enableToggle" checked />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="date-badge">
+          <span class="emoji">📅</span>
+          <span>Filtering to before Nov 30, 2022</span>
+        </div>
+      </div>
+
+      <!-- Stats Card -->
+      <div class="stats-card">
+        <div class="stat-item">
+          <div class="stat-value" id="searchCount">0</div>
+          <div class="stat-label">bot-free searches</div>
+        </div>
+      </div>
+
+      <!-- Platforms Card -->
+      <div class="platforms-card">
+        <div class="card-header">
+          <span class="emoji">✨</span>
+          <span>Works on</span>
+        </div>
+        <div class="platform-tags">
+          <span class="tag">Google</span>
+          <span class="tag">Reddit</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Stack Overflow</span>
+          <span class="tag">DuckDuckGo</span>
+          <span class="tag">Bing</span>
+          <span class="tag">Yahoo</span>
+        </div>
+      </div>
+
+      <!-- Why Card -->
+      <div class="why-card">
+        <div class="card-header">
+          <span class="emoji">💭</span>
+          <span>Why tho?</span>
+        </div>
+        <p>
+          Look, AI is cool and all, but sometimes you just want content
+          from actual humans who actually tried things and actually know
+          what they're talking about.
+        </p>
+        <p>
+          This extension filters your searches to before ChatGPT dropped
+          and flooded the internet with generated content.
+        </p>
+      </div>
+
+      <!-- Support Card -->
+      <div class="support-card">
+        <div class="support-emoji">🫶</div>
+        <div class="support-header">vibing with OG Search?</div>
+        <p class="support-text">
+          this extension is free forever because gatekeeping sucks. but
+          if it's making your life better, consider supporting:
+        </p>
+        <div class="support-buttons">
+          <a
+            href="https://buymeacoffee.com/ogsearchapp"
+            target="_blank"
+            class="btn-primary"
+          >
+            ☕ buy me a coffee
+          </a>
+          <div class="btn-row">
+            <a
+              href="https://github.com/kieracarman/og-search"
+              target="_blank"
+              class="btn-secondary"
+            >
+              ⭐ star on github
+            </a>
+            <a href="#" id="shareLink" class="btn-secondary">
+              📢 tell your friends
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <p>made by humans who miss the real internet</p>
+        <p>
+          <a
+            href="https://twitter.com/ogsearchapp"
+            target="_blank"
+            class="social-link"
+          >
+            @ogsearchapp
+          </a>
+        </p>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
