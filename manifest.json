@@ -2,6 +2,14 @@
   "manifest_version": 2,
   "name": "OG Search",
   "version": "1.0.0",
+  "browser_specific_settings": {
+		"gecko": {
+			"id": "@og-search",
+			"data_collection_permissions": {
+				"required": ["none"]
+			}
+		}
+	},
   "description": "Search before the bots. Filters results to pre-ChatGPT internet when everything was made by actual humans.",
   "author": "Kiera Carman",
   "homepage_url": "https://ogsearch.app",
